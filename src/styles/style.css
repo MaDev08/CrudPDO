@@ -6,16 +6,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url('../images/background.svg');
+    background-image: url('../images/6b2e9fe6a219e32a03a1d45e0d41fe78'); /* Removido o espaço extra */
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 #to_do {
     display: flex;

@@ -3,7 +3,7 @@
 
     $tasks = [];
 
-    $sql = $pdo->query(""); // REALIZA UMA CONSULTA SQL
+    $sql = $pdo->query("SELECT * FROM task ORDER BY id ASC"); // REALIZA UMA CONSULTA SQL
 
     if ($sql->rowCount() > 0){
         $tasks = $sql->fetchAll(PDO::FETCH_ASSOC);

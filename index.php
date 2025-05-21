@@ -1,5 +1,16 @@
+<?php 
+    require_once("database/connect.php");
+
+    $tasks = [];
+
+    $sql = $pdo->query(""); // REALIZA UMA CONSULTA SQL
+
+    if ($sql->rowCount() > 0){
+        $tasks = $sql->fetchAll(PDO::FETCH_ASSOC);
+    }
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">

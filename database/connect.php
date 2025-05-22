@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$database = "pdo_php";
+$password = "123456";
+$database = "to_do_list";
 
 try {
   $pdo = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);

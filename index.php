@@ -3,7 +3,7 @@
 
     $tasks = [];
 
-    $sql = $pdo->query("SELECT * FROM task ORDER BY id ASC"); // REALIZA UMA CONSULTA SQL
+    $sql = $pdo->query("SELECT * FROM tarefa ORDER BY id ASC"); 
 
     if ($sql->rowCount() > 0){
         $tasks = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -43,7 +43,7 @@
                 <input
                     type="checkbox"
                     name="progress"
-                    class="progress"
+                    class="progress <?= $task ['completed'] ? 'done' : '' ?>"
                     <?= ($task["completed"] ? 'checked' : '') ?>
                 >
 
